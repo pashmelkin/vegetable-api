@@ -6,7 +6,7 @@
         "whenToPlant": "Winter through to Autumn.",
         "harvest": "Throughout the year as required.",
         "sow": "Spring, Summer, Autumn, Winter.",
-        "soil_type": "well cultivated, well drained, sunny position.",
+        "soilType": "well cultivated, well drained, sunny position.",
         "notes": "Soil should be lacking in nutrient; too much nutrients particularly nitrogen will result in forked carrots.",
         "urlToImage": "https://our-veggie-patch-images.s3-ap-southeast-2.amazonaws.com/carrot.jpg"
     },
