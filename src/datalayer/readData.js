@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-module.exports.readData = function (filename) {
+module.exports.readData =  (filename) => {
     if (fs.existsSync(filename)) {
       return(fs.readFileSync(filename, 'utf8'));
     }
