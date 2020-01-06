@@ -1,8 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const vegies = require('../middleware/readVegies');
+const router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.json({ok:true});
+  res.send(vegies.readVegies());
 });
 
 module.exports = router;
