@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./src/server.js",
-    "pretest": "eslint --ignore-path .gitignore ."
+    "pretest": "eslint --ignore-path .gitignore .",
+    "test" : "mocha"
+
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -12,6 +14,7 @@
     "express": "~4.16.1",
     "fs": "0.0.1-security",
     "http-errors": "~1.6.3",
+    "mocha": "^7.0.0",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
