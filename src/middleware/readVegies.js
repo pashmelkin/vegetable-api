@@ -1,6 +1,6 @@
-const config = require('../../config');
-const data = require ('../datalayer/readData.js');
+const config = require('../../config')
+const data = require('../datalayer/readData.js')
 
 module.exports.readVegies = () => {
-    return  data.readData(config.connectionString);
-  }
+  return data.readData(config.connectionString)
+}
