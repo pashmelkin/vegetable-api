@@ -68,18 +68,10 @@ function onError (error) {
     case 'EACCES':
       console.error(bind + ' requires elevated privileges')
       process.exit(1)
-<<<<<<< HEAD
-      break
-=======
->>>>>>> ae4cc08992f8315894775b9c976b6f6b5f9490f1
     case 'EADDRINUSE':
       debug(bind + ' is already in use')
       console.error(bind + ' is already in use')
       process.exit(1)
-<<<<<<< HEAD
-      break
-=======
->>>>>>> ae4cc08992f8315894775b9c976b6f6b5f9490f1
     default:
       throw error
   }
