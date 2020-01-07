@@ -64,6 +64,7 @@ function onError (error) {
     : 'Port ' + port
 
   // handle specific listen errors with friendly messages
+  /* eslint no-unreachable: "off" */
   switch (error.code) {
     case 'EACCES':
       console.error(bind + ' requires elevated privileges')
