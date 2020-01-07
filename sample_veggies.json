@@ -9,7 +9,7 @@
                     "title": "Botanical Name",
                     "desc": "Daucus carota"
                 },
-                { 
+                {
                     "title": "How To Grow",
                     "desc": "Sow thinly, 6mm deep in rows 30cm apart. Keep moist. Repeat every two weeks for continuous crops. Thin out to 10cm apart and water well to replace any soil dislodged from roots."
                 },
@@ -27,13 +27,13 @@
                 },
                 {
                     "title": "Soil Type",
-                    "desc": "Well cultivated, well drained, sunny position",
+                    "desc": "Well cultivated, well drained, sunny position"
                 },
                 {
                     "title": "Notes",
                     "desc": "Soil should be lacking in nutrient; too much nutrients particularly nitrogen will result in forked carrots"
                 }
-            ]        
+            ]
         },
         {
             "name": "Tomato Roma",
