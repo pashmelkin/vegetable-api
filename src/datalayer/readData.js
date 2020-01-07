@@ -4,6 +4,6 @@ module.exports.readData = (filename) => {
   if (fs.existsSync(filename)) {
     return (fs.readFileSync(filename, 'utf8'))
   } else {
-    return ('File not found:' + filename)
+    return ('File not found:' + filenmame)
   }
 }
