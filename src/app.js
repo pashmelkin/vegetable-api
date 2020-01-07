@@ -7,6 +7,14 @@ var app = express()
 
 app.use(logger('dev'))
 
+app.use(
+  cors({
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    preflightContinue: false
+  })
+)
+
 app.use('/v1/veggies', veggiesRouter)
 
 // catch 404 and forward to error handler
@@ -20,12 +28,6 @@ app.use(function (err, req, res, next) {
   res.json(err)
 })
 
-app.use(
-  cors({
-    origin: '*',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    preflightContinue: false
-  })
-)
+
 
 module.exports = app
