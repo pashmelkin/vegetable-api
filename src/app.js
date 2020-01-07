@@ -1,6 +1,7 @@
 var createError = require('http-errors')
 var express = require('express')
 var logger = require('morgan')
+var cors = require('cors')
 var veggiesRouter = require('./routes/veggies')
 var app = express()
 
@@ -18,5 +19,13 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500)
   res.json(err)
 })
+
+app.use(
+  cors({
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    preflightContinue: false
+  })
+)
 
 module.exports = app
