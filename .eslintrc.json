@@ -17,5 +17,14 @@
     },
     "rules": {
       "arrow-body-style": ["error", "as-needed"]
-    }
+    },
+    "overrides": [
+       {
+           "files": ["*.test.js"],
+           "rules": {
+               "no-unused-expressions": "off",
+               "no-unused-vars": "off"
+           }
+       }
+   ]
 }
