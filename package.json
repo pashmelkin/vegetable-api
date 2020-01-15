@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./src/server.js",
-    "pretest": "eslint --ignore-path .gitignore ."
+    "pretest": "eslint --ignore-path .gitignore .",
+    "test": "npm run lint && mocha test/* --exit",
+    "lint": "eslint --ignore-path .gitignore . --fix"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -15,11 +17,15 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.0.0",
+    "sinon": "^8.0.4",
+    "supertest": "^4.0.2"
   }
 }
