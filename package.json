@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "pretest": "eslint --ignore-path .gitignore .",
-    "test": "mocha test/* --exit",
+    "test": "npm run lint && mocha test/* --exit",
     "lint": "eslint --ignore-path .gitignore . --fix"
   },
   "dependencies": {
