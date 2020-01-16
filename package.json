@@ -6,7 +6,22 @@
     "start": "node ./src/server.js",
     "pretest": "eslint --ignore-path .gitignore .",
     "test": "npm run lint && mocha test/* --exit",
-    "lint": "eslint --ignore-path .gitignore . --fix"
+    "lint": "eslint --ignore-path .gitignore . --fix",
+    "nyc": "nyc  npm run test",
+    "coverage": "nyc --check-coverage npm run test"
+  },
+  "nyc": {
+    "branches": 5,
+     "lines": 5,
+     "functions": 5,
+     "statements": 5,
+     "all": true,
+     "include": [
+       "src/**/*.js"
+     ],
+     "exclude": [
+       "src/routes/swagger.js"
+     ]
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -26,6 +41,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
     "sinon": "^8.0.4",
     "supertest": "^4.0.2"
   }
