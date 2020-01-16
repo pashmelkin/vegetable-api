@@ -14,4 +14,5 @@ Solition decisions:
     https://blog.cloudboost.io/adding-swagger-to-existing-node-js-project-92a6624b855b
     https://www.npmjs.com/package/swagger-ui-express
     Swagger Editor: https://editor.swagger.io
-
+5. Code Coverage:
+    https://istanbul.js.org
