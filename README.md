@@ -16,3 +16,8 @@ Solition decisions:
     Swagger Editor: https://editor.swagger.io
 5. Code Coverage:
     https://istanbul.js.org
+6. TODO: 
+    a. move backend here
+    b. use interfaces
+    c. use typescript
+            
