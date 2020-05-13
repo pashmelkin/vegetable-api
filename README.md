@@ -1,3 +1,5 @@
+# DEPRECATED
+
 Solition decisions:
 
 1. Choosing Express node js vs other libraries:
